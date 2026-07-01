@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3{
+            color:green;
+
+        }
+        button{
+            padding:20px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        this is a home page 
+    </h1>
+    <h3 id="welcome">welcome to chitkara</h3>
+    <button id="submit">exit</button>
+</body>
+</html>
+<script>
+    // console.log("hello")
+    var greet=document.getElementById("welcome")
+    // console.log(greet)
+    var btn=document.getElementById("submit")
+    btn.addEventListener("click",handleClick)
+    var flag=false
+    function handleClick(){
+        // 
+        flag=!flag
+        if(flag){
+            greet.innerText="welcome"
+        greet.style.color="blue"
+        btn.innerText="hii"
+
+        }else{
+        greet.innerText="welcome to chitkara"
+        greet.style.color="green"
+        btn.innerText="exit"
+        }
+
+        
+    }
+
+
+</script>
